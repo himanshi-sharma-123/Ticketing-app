@@ -9,7 +9,9 @@ const DeleteBlock = ({ id }) => {
   const router = useRouter();
   const deleteTicket = async () => {
     const res = await fetch(
-      `https://ticketingapp-2j4o.onrender.com/api/Tickets/${id}`,
+      `http://localhost:3000/api/Tickets/${id}`,
+      // `https://ticketingapp-2j4o.onrender.com/api/Tickets/${id}`,
+
       {
         method: "DELETE",
       }

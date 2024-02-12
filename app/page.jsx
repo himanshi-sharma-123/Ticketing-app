@@ -3,7 +3,9 @@ import TicketCard from "./(components)/TicketCard";
 const getTickets = async () => {
   try {
     const res = await fetch(
-      "https://ticketingapp-2j4o.onrender.com/api/Tickets",
+      "http://localhost:3000/api/Tickets",
+
+      // "https://ticketingapp-2j4o.onrender.com/api/Tickets",
       {
         cache: "no-store",
       }
